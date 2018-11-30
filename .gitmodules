@@ -1,0 +1,3 @@
+[submodule "Code/Lks.Git.Dll"]
+	path = Code/Lks.Git.Dll
+	url = http://vic_lnh@lksgit:10088/r/Lks.Git.Dll.git

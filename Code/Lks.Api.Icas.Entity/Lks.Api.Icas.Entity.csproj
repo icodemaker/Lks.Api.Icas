@@ -30,8 +30,12 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Lks.Enum">
+      <HintPath>..\Lks.Git.Dll\Lks.Enum.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Data.Entity" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -43,109 +47,55 @@
     <Compile Include="Account.cs">
       <DependentUpon>LksForIcasContext.tt</DependentUpon>
     </Compile>
-    <Compile Include="AccountMap.cs">
-      <DependentUpon>LksForIcasContext.tt</DependentUpon>
-    </Compile>
     <Compile Include="ArrangeCourse.cs">
-      <DependentUpon>LksForIcasContext.tt</DependentUpon>
-    </Compile>
-    <Compile Include="ArrangeCourseMap.cs">
       <DependentUpon>LksForIcasContext.tt</DependentUpon>
     </Compile>
     <Compile Include="BlacklistCourse.cs">
       <DependentUpon>LksForIcasContext.tt</DependentUpon>
     </Compile>
-    <Compile Include="BlacklistCourseMap.cs">
-      <DependentUpon>LksForIcasContext.tt</DependentUpon>
-    </Compile>
     <Compile Include="BlacklistUser.cs">
-      <DependentUpon>LksForIcasContext.tt</DependentUpon>
-    </Compile>
-    <Compile Include="BlacklistUserMap.cs">
       <DependentUpon>LksForIcasContext.tt</DependentUpon>
     </Compile>
     <Compile Include="BookRecord.cs">
       <DependentUpon>LksForIcasContext.tt</DependentUpon>
     </Compile>
-    <Compile Include="BookRecordMap.cs">
-      <DependentUpon>LksForIcasContext.tt</DependentUpon>
-    </Compile>
     <Compile Include="ClassTypePool.cs">
-      <DependentUpon>LksForIcasContext.tt</DependentUpon>
-    </Compile>
-    <Compile Include="ClassTypePoolMap.cs">
       <DependentUpon>LksForIcasContext.tt</DependentUpon>
     </Compile>
     <Compile Include="Course.cs">
       <DependentUpon>LksForIcasContext.tt</DependentUpon>
     </Compile>
-    <Compile Include="CourseMap.cs">
-      <DependentUpon>LksForIcasContext.tt</DependentUpon>
-    </Compile>
     <Compile Include="CourseSubject.cs">
-      <DependentUpon>LksForIcasContext.tt</DependentUpon>
-    </Compile>
-    <Compile Include="CourseSubjectMap.cs">
       <DependentUpon>LksForIcasContext.tt</DependentUpon>
     </Compile>
     <Compile Include="CourseType.cs">
       <DependentUpon>LksForIcasContext.tt</DependentUpon>
     </Compile>
-    <Compile Include="CourseTypeMap.cs">
-      <DependentUpon>LksForIcasContext.tt</DependentUpon>
-    </Compile>
     <Compile Include="CourseTypeSubject.cs">
-      <DependentUpon>LksForIcasContext.tt</DependentUpon>
-    </Compile>
-    <Compile Include="CourseTypeSubjectMap.cs">
       <DependentUpon>LksForIcasContext.tt</DependentUpon>
     </Compile>
     <Compile Include="Exclusiver.cs">
       <DependentUpon>LksForIcasContext.tt</DependentUpon>
     </Compile>
-    <Compile Include="ExclusiverMap.cs">
-      <DependentUpon>LksForIcasContext.tt</DependentUpon>
-    </Compile>
     <Compile Include="Favorite.cs">
-      <DependentUpon>LksForIcasContext.tt</DependentUpon>
-    </Compile>
-    <Compile Include="FavoriteMap.cs">
       <DependentUpon>LksForIcasContext.tt</DependentUpon>
     </Compile>
     <Compile Include="History.cs">
       <DependentUpon>LksForIcasContext.tt</DependentUpon>
     </Compile>
-    <Compile Include="HistoryMap.cs">
-      <DependentUpon>LksForIcasContext.tt</DependentUpon>
-    </Compile>
     <Compile Include="HistoryStu.cs">
-      <DependentUpon>LksForIcasContext.tt</DependentUpon>
-    </Compile>
-    <Compile Include="HistoryStuMap.cs">
       <DependentUpon>LksForIcasContext.tt</DependentUpon>
     </Compile>
     <Compile Include="HistoryTea.cs">
       <DependentUpon>LksForIcasContext.tt</DependentUpon>
     </Compile>
-    <Compile Include="HistoryTeaMap.cs">
-      <DependentUpon>LksForIcasContext.tt</DependentUpon>
-    </Compile>
     <Compile Include="Log.cs">
-      <DependentUpon>LksForIcasContext.tt</DependentUpon>
-    </Compile>
-    <Compile Include="LogMap.cs">
       <DependentUpon>LksForIcasContext.tt</DependentUpon>
     </Compile>
     <Compile Include="Matching.cs">
       <DependentUpon>LksForIcasContext.tt</DependentUpon>
     </Compile>
-    <Compile Include="MatchingMap.cs">
-      <DependentUpon>LksForIcasContext.tt</DependentUpon>
-    </Compile>
     <Compile Include="MathingCourseType.cs">
-      <DependentUpon>LksForIcasContext.tt</DependentUpon>
-    </Compile>
-    <Compile Include="MathingCourseTypeMap.cs">
       <DependentUpon>LksForIcasContext.tt</DependentUpon>
     </Compile>
     <Compile Include="LksForIcasContext.cs">
@@ -157,25 +107,13 @@
     <Compile Include="StudentProduct.cs">
       <DependentUpon>LksForIcasContext.tt</DependentUpon>
     </Compile>
-    <Compile Include="StudentProductMap.cs">
-      <DependentUpon>LksForIcasContext.tt</DependentUpon>
-    </Compile>
     <Compile Include="StudentProductPackage.cs">
       <DependentUpon>LksForIcasContext.tt</DependentUpon>
     </Compile>
     <Compile Include="StudentProductPackageCourse.cs">
       <DependentUpon>LksForIcasContext.tt</DependentUpon>
     </Compile>
-    <Compile Include="StudentProductPackageCourseMap.cs">
-      <DependentUpon>LksForIcasContext.tt</DependentUpon>
-    </Compile>
-    <Compile Include="StudentProductPackageMap.cs">
-      <DependentUpon>LksForIcasContext.tt</DependentUpon>
-    </Compile>
     <Compile Include="StuReq.cs">
-      <DependentUpon>LksForIcasContext.tt</DependentUpon>
-    </Compile>
-    <Compile Include="StuReqMap.cs">
       <DependentUpon>LksForIcasContext.tt</DependentUpon>
     </Compile>
     <Compile Include="Teacher.cs">
@@ -184,46 +122,22 @@
     <Compile Include="TeacherContract.cs">
       <DependentUpon>LksForIcasContext.tt</DependentUpon>
     </Compile>
-    <Compile Include="TeacherContractMap.cs">
-      <DependentUpon>LksForIcasContext.tt</DependentUpon>
-    </Compile>
-    <Compile Include="TeacherMap.cs">
-      <DependentUpon>LksForIcasContext.tt</DependentUpon>
-    </Compile>
     <Compile Include="TeachRecord.cs">
-      <DependentUpon>LksForIcasContext.tt</DependentUpon>
-    </Compile>
-    <Compile Include="TeachRecordMap.cs">
       <DependentUpon>LksForIcasContext.tt</DependentUpon>
     </Compile>
     <Compile Include="TeaReq.cs">
       <DependentUpon>LksForIcasContext.tt</DependentUpon>
     </Compile>
-    <Compile Include="TeaReqMap.cs">
-      <DependentUpon>LksForIcasContext.tt</DependentUpon>
-    </Compile>
     <Compile Include="TeaReqMathing.cs">
-      <DependentUpon>LksForIcasContext.tt</DependentUpon>
-    </Compile>
-    <Compile Include="TeaReqMathingMap.cs">
       <DependentUpon>LksForIcasContext.tt</DependentUpon>
     </Compile>
     <Compile Include="UserCourseSubject.cs">
       <DependentUpon>LksForIcasContext.tt</DependentUpon>
     </Compile>
-    <Compile Include="UserCourseSubjectMap.cs">
-      <DependentUpon>LksForIcasContext.tt</DependentUpon>
-    </Compile>
     <Compile Include="UserCourseType.cs">
       <DependentUpon>LksForIcasContext.tt</DependentUpon>
     </Compile>
-    <Compile Include="UserCourseTypeMap.cs">
-      <DependentUpon>LksForIcasContext.tt</DependentUpon>
-    </Compile>
     <Compile Include="UserInfo.cs">
-      <DependentUpon>LksForIcasContext.tt</DependentUpon>
-    </Compile>
-    <Compile Include="UserInfoMap.cs">
       <DependentUpon>LksForIcasContext.tt</DependentUpon>
     </Compile>
   </ItemGroup>
