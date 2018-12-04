@@ -30,6 +30,12 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Lks.Enum">
+      <HintPath>..\Lks.Git.Dll\Lks.Enum.dll</HintPath>
+    </Reference>
+    <Reference Include="Lks.IBaseService">
+      <HintPath>..\Lks.Git.Dll\Lks.IBaseService.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -41,12 +47,14 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="IBaseIcasService.cs" />
+    <Compile Include="Teacher\ITeacherRequestService.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Course\" />
-    <Folder Include="Match\" />
-    <Folder Include="Student\" />
-    <Folder Include="Teacher\" />
+    <ProjectReference Include="..\Lks.Api.Icas.Entity\Lks.Api.Icas.Entity.csproj">
+      <Project>{58E53193-710B-438A-ADEB-7129D5F0D81B}</Project>
+      <Name>Lks.Api.Icas.Entity</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

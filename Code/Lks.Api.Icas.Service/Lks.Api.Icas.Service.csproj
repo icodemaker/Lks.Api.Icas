@@ -30,6 +30,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Lks.IBaseService">
+      <HintPath>..\Lks.Git.Dll\Lks.IBaseService.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -42,12 +45,22 @@
   <ItemGroup>
     <Compile Include="Course\ArrangeCourseService.cs" />
     <Compile Include="Course\CourseService.cs" />
+    <Compile Include="LksIcasService.cs" />
     <Compile Include="Match\MatchingService.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Student\StudentRequestService.cs" />
     <Compile Include="Teacher\TeacherRequestService.cs" />
     <Compile Include="Teacher\TeacherService.cs" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <ProjectReference Include="..\Lks.Api.Icas.Entity\Lks.Api.Icas.Entity.csproj">
+      <Project>{58E53193-710B-438A-ADEB-7129D5F0D81B}</Project>
+      <Name>Lks.Api.Icas.Entity</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Lks.Api.Icas.IService\Lks.Api.Icas.IService.csproj">
+      <Project>{3676a1ec-4d12-4380-a9c9-900e4b8443b9}</Project>
+      <Name>Lks.Api.Icas.IService</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
